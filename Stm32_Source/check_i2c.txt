@@ -1,0 +1,95 @@
+/**
+  ******************************************************************************
+  * @file    Project/STM32F10x_StdPeriph_Template/main.c 
+  * @author  MCD Application Team
+  * @version V3.6.0
+  * @date    20-September-2021
+  * @brief   Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2011 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+
+/* Includes ------------------------------------------------------------------*/
+#include <stdio.h>
+#include <main.h>
+#include <FreeRtos.h>
+
+void i2c_init()
+{
+	/*Enable clock access to GPIOB*/
+	RCC->APB2ENR|=RCC_APB2ENR_IOPBEN;
+
+	/*Set PB6 to output 50MHz*/
+	GPIOB->CRL|=GPIO_CRL_MODE6;
+	/*Set PB6 to ALternate Open drain*/
+	GPIOB->CRL|=GPIO_CRL_CNF6;
+
+	/*Set PB7 to output 50MHz*/
+	GPIOB->CRL|=GPIO_CRL_MODE7;
+	/*Set PB7 to ALternate Open drain*/
+	GPIOB->CRL|=GPIO_CRL_CNF7;
+
+	/*Enable clock access to alternate function of the pins*/
+	RCC->APB2ENR|=RCC_APB2ENR_AFIOEN;
+
+	/*Enable clock access to I2C1*/
+	RCC->APB1ENR|=RCC_APB1ENR_I2C1EN;
+
+
+	/*Tell the peripheral that the clock is 8MHz*/
+	I2C1->CR2&=~(I2C_CR2_FREQ);
+	I2C1->CR2|=(8<<0U);
+	/*Set the rise time*/
+	I2C1->TRISE=9;
+
+	I2C1->CCR|=0x28;
+
+	I2C1->CR1|=I2C_CR1_PE;
+}
+
+static void delay(uint32_t delay)
+{
+	for (volatile int i=0;i<1000;i++);
+}
+
+
+uint8_t i2c1_scan_bus(void)
+{        
+	uint8_t out = 0;
+	int a=0;
+  for (uint8_t i=0;i<128;i++)
+  {
+   I2C1->CR1 |= I2C_CR1_START;
+   while(!(I2C1->SR1 & I2C_SR1_SB));
+   I2C1->DR=(i<<1|0);
+   while(!(I2C1->SR1)|!(I2C1->SR2)){};
+   I2C1->CR1 |= I2C_CR1_STOP;
+   delay(100);//minium wait time is 40 uS, but for sure, leave it 100 uS
+   a=(I2C1->SR1&I2C_SR1_ADDR);
+   if (a==2)
+   {
+     out = i;
+   }
+  }
+	return out;
+}
+
+uint8_t addr = 0;
+
+int main()
+{
+	i2c_init();
+	while(1)
+	{
+			addr = i2c1_scan_bus();
+	}
+}

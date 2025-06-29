@@ -1,0 +1,13 @@
+.\objects\display.o: OLED_Lib\display.c
+.\objects\display.o: OLED_Lib\display.h
+.\objects\display.o: OLED_Lib\ssd1306.h
+.\objects\display.o: .\CMSIS\stm32f10x.h
+.\objects\display.o: .\CMSIS\core_cm3.h
+.\objects\display.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\display.o: .\CMSIS\system_stm32f10x.h
+.\objects\display.o: OLED_Lib\fonts.h
+.\objects\display.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\display.o: OLED_Lib\iic.h
+.\objects\display.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\display.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\display.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

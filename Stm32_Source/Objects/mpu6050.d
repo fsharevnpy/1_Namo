@@ -1,0 +1,10 @@
+.\objects\mpu6050.o: IMU_Lib\I2C_DMP\MPU6050.c
+.\objects\mpu6050.o: IMU_Lib\I2C_DMP\MPU6050.h
+.\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mpu6050.o: .\IMU_Lib\I2C_dev\IMU.h
+.\objects\mpu6050.o: .\CMSIS\stm32f10x.h
+.\objects\mpu6050.o: .\CMSIS\core_cm3.h
+.\objects\mpu6050.o: .\CMSIS\system_stm32f10x.h
+.\objects\mpu6050.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h
+.\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

@@ -1,0 +1,12 @@
+.\objects\ssd1306.o: OLED_Lib\ssd1306.c
+.\objects\ssd1306.o: OLED_Lib\ssd1306.h
+.\objects\ssd1306.o: .\CMSIS\stm32f10x.h
+.\objects\ssd1306.o: .\CMSIS\core_cm3.h
+.\objects\ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ssd1306.o: .\CMSIS\system_stm32f10x.h
+.\objects\ssd1306.o: OLED_Lib\fonts.h
+.\objects\ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ssd1306.o: OLED_Lib\iic.h
+.\objects\ssd1306.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\ssd1306.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

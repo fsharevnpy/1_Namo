@@ -1,0 +1,9 @@
+.\objects\iic.o: OLED_Lib\iic.c
+.\objects\iic.o: OLED_Lib\iic.h
+.\objects\iic.o: .\CMSIS\stm32f10x.h
+.\objects\iic.o: .\CMSIS\core_cm3.h
+.\objects\iic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\iic.o: .\CMSIS\system_stm32f10x.h
+.\objects\iic.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\iic.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\iic.o: .\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h

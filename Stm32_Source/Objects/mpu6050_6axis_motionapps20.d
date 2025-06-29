@@ -1,0 +1,17 @@
+.\objects\mpu6050_6axis_motionapps20.o: IMU_Lib\I2C_DMP\MPU6050_6Axis_MotionApps20.c
+.\objects\mpu6050_6axis_motionapps20.o: IMU_Lib\I2C_DMP\helper_3dmath.h
+.\objects\mpu6050_6axis_motionapps20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\mpu6050_6axis_motionapps20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mpu6050_6axis_motionapps20.o: IMU_Lib\I2C_DMP\MPU6050_6Axis_MotionApps20.h
+.\objects\mpu6050_6axis_motionapps20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\mpu6050_6axis_motionapps20.o: IMU_Lib\I2C_DMP\MPU6050.h
+.\objects\mpu6050_6axis_motionapps20.o: .\FreeRTOS_Library\include\FreeRTOS.h
+.\objects\mpu6050_6axis_motionapps20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\mpu6050_6axis_motionapps20.o: .\User\FreeRTOSConfig.h
+.\objects\mpu6050_6axis_motionapps20.o: .\FreeRTOS_Library\include\projdefs.h
+.\objects\mpu6050_6axis_motionapps20.o: .\FreeRTOS_Library\include\portable.h
+.\objects\mpu6050_6axis_motionapps20.o: .\FreeRTOS_Library\include\deprecated_definitions.h
+.\objects\mpu6050_6axis_motionapps20.o: .\FreeRTOS_Library\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\mpu6050_6axis_motionapps20.o: .\FreeRTOS_Library\include\mpu_wrappers.h
+.\objects\mpu6050_6axis_motionapps20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mpu6050_6axis_motionapps20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
