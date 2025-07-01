@@ -28,3 +28,9 @@ This is how the components are connected in the circuit:
 This is the final assembled product:
 
 ![Final Result](./images/Result.jpg)
+
+---
+
+If you have any suggestions or feedback, feel free to contact me via  
+Facebook: [https://www.facebook.com/nguyen.vdx/](https://www.facebook.com/nguyen.vdx/)  
+Email: nguyen.voduongxuan@gmail.com
