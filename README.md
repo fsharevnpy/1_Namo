@@ -5,6 +5,7 @@ In this project, I use the following components:
 - **STM32F103C8T6**
 - **VC02 AI Thinker**
 - **3AA Battery Box**
+- **Schottky Diode**
 - **LM2596** – Used to supply the STM32; output voltage adjusted to ~3.3V
 - **MT3608** – Used to supply the VC02 AI Thinker; output voltage adjusted to ~5V
 - **OLED 1.3 inch display**
